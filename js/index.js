@@ -18,3 +18,8 @@ function closeModal(elem){
 function openCreatePostModal(createPostElem){
     createPostElem.style.display = "block";
 }
+
+function changeLocation()
+{
+    window.location='./html/bloglist.html';
+}
