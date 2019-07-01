@@ -19,7 +19,7 @@
             <input class="topButtons" type="button" value="Sign Up" onclick="signUp(signUpModal)">
             <input class="topButtons" type="button" value="Sign In" onclick="signIn(signInModal)">
             <a id="pageTitle" class="logo-title">ScriBBler</a>
-            <p class="middleText">Explore, Imagine, Create</p>  
+            <p class="middleText">Explore, Imagine, Create</p>
 
         </div>
     </div>
@@ -33,24 +33,23 @@
                     <h2>Welcome Back!
                         <span class="underline"></span>
                     </h2>
-                  </div>
-                  <div class="modal-body">
-                        <div class="container">
-                            <form>
-                                <label>Username</label>
-                                <input type="text" placeholder="Enter Username" required>
-                                    
-                                <label>Password</label>
-                                <input type="password" placeholder="Enter Password" required>
-                                    
-                            </form>
-                            <button class="submit-btn">Sign In</button>
-                            <div class="member-registration">
-                                Not a member?
-                                <a onclick="openSignUpModal(signInModal)">Sign Up</a>
-                            </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <label>Username</label>
+                            <input type="text" placeholder="Enter Username" required>
+
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter Password" required>
+
+                        </form>
+                        <button class="submit-btn">Sign In</button>
+                        <div class="member-registration">
+                            Not a member? <a onclick="openSignUpModal(signInModal)">Sign Up</a>
                         </div>
-                  </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -66,26 +65,26 @@
                     <h2>Get Started
                         <span class="underline"></span>
                     </h2>
-                  </div>
-                  <div class="modal-body">
+                </div>
+                <div class="modal-body">
                     <div class="container">
                         <form>
                             <label>Full Name</label>
                             <input type="text" placeholder="Enter Full Name" required>
-                            
+
                             <label>Username</label>
                             <input type="text" placeholder="Enter Username" required>
-                            
+
                             <label>Password</label>
                             <input type="password" placeholder="Enter Password" required>
-                            
+
                             <label>Confirm Password</label>
                             <input type="password" placeholder="Confirm Password" required>
-                            
+
                         </form>
                         <button class="submit-btn">Sign Up</button>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
@@ -99,16 +98,20 @@
             <div class="post-content">
 
                 <!-- Insert code for Trash icon here -->
-                
-                <p class="post-title">Hello there ! This is Post 1. <i class="fa fa-trash-o" aria-hidden="true"></i></p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
-                    music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
-                    had ever ventured before. His boundless drive, technical ability and creative application of such
-                    effects as distortion forever transformed the sound of rock and roll. While creating his unique
-                    musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul,
-                    British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
-                <!-- Insert code for ... icon here -->
+                <p class="post-title">Hello there ! This is Post 1. <i class="fa fa-trash-o"
+                        onclick="deletePost(deleteModal)" aria-hidden="true"></i>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+                        music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no
+                        musician
+                        had ever ventured before. His boundless drive, technical ability and creative application of
+                        such
+                        effects as distortion forever transformed the sound of rock and roll. While creating his unique
+                        musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul,
+                        British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+                    <!-- Insert code for ... icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -121,7 +124,8 @@
 
                 <!-- Insert code for Trash icon here -->
 
-                <p class="post-title">Hello there ! This is Post 2. </p>
+                <p class="post-title">Hello there ! This is Post 2. <i class="fa fa-trash-o"
+                        onclick="deletePost(deleteModal)" aria-hidden="true"></i></p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
                     music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
                     had ever ventured before. His boundless drive, technical ability and creative application of such
@@ -131,6 +135,8 @@
 
 
                 <!-- Insert code for ... icon here -->
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
             </div>
         </div>
 
@@ -143,7 +149,8 @@
 
                 <!-- Insert code for Trash icon here -->
 
-                <p class="post-title">Hello there ! This is Post 3. </p>
+                <p class="post-title">Hello there ! This is Post 3. <i class="fa fa-trash-o"
+                        onclick="deletePost(deleteModal)" aria-hidden="true"></i></p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
                     music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
                     had ever ventured before. His boundless drive, technical ability and creative application of such
@@ -152,6 +159,7 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -163,7 +171,8 @@
 
                 <!-- Insert code for Trash icon here -->
 
-                <p class="post-title">Hello there ! This is Post 4. </p>
+                <p class="post-title">Hello there ! This is Post 4.<i class="fa fa-trash-o"
+                        onclick="deletePost(deleteModal)" aria-hidden="true"></i></p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
                     music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
                     had ever ventured before. His boundless drive, technical ability and creative application of such
@@ -172,6 +181,7 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -183,7 +193,8 @@
 
                 <!-- Insert code for Trash icon here -->
 
-                <p class="post-title">Hello there ! This is Post 5. </p>
+                <p class="post-title">Hello there ! This is Post 5. <i class="fa fa-trash-o"
+                        onclick="deletePost(deleteModal)" aria-hidden="true"></i></p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
                     music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
                     had ever ventured before. His boundless drive, technical ability and creative application of such
@@ -192,6 +203,7 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -199,7 +211,20 @@
         <div>
 
             <!-- Insert code for delete modal here -->
+            <div id="deleteModal" class="modal">
+                <div class="modal-content">
+                    <div class="delmodal-body">
+                        <h3>Are you sure you want to delete this post?</h3>
+                        <div class="deleteContainer">   
+                            <!-- Insert code for All Posts & Create Post button here -->
+                            <input class="yes-btn" type="button" value="Yes"    >
+                            <input class="no-btn" type="button" value="No"
+                                onclick="closeModal(deleteModal)">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
