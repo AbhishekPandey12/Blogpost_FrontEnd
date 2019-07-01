@@ -32,13 +32,3 @@ function postLiked() {
 }
 
 
-// to add comments and display
-var firstComment = 0;
-function addComments(id) {
-    var addEventName = id.value + '<br>';
-    if (id.value != '') {
-        var commentBox = document.getElementById('userComments');
-        document.getElementById('addEventNames').innerHTML = "<div class = 'comments'>" + addEventName + "</div>" + document.getElementById('addEventNames').innerHTML;
-        commentBox.value = commentBox.defaultValue;
-    }
-}
