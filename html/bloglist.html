@@ -111,7 +111,7 @@
                         British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                     <!-- Insert code for ... icon here -->
-                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-h" onclick="changeLocation()" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -135,7 +135,7 @@
 
 
                 <!-- Insert code for ... icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-h" onclick="changeLocation()" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -159,7 +159,7 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-h" onclick="changeLocation()" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -181,7 +181,7 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-h" onclick="changeLocation()" aria-hidden="true"></i>
 
             </div>
         </div>
@@ -203,21 +203,40 @@
                     British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
                 <!-- Insert code for ... icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <i class="fa fa-ellipsis-h" onclick="changeLocation()" aria-hidden="true"></i>
 
             </div>
         </div>
 
         <div>
 
-            <!-- Insert code for delete modal here -->
             <div id="deleteModal" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" style="height:30%">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal(deleteModal)">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <h3 style="color:black; text-align: center">Are you sure you want to delete this post?</h3>
+                        <div class="deleteContainer">
+                            <!-- Insert code for All Posts & Create Post button here -->
+                            <input class="yes-btn" type="button" value="Yes">
+                            <input class="no-btn" type="button" value="No" onclick="closeModal(deleteModal)">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Insert code for delete modal here -->
+            <div id="ff" class="modal">
+                <div class="del-content">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal(signInModal)">&times;</span>
+                    </div>
                     <div class="delmodal-body">
                         <h3>Are you sure you want to delete this post?</h3>
                         <div class="deleteContainer">   
                             <!-- Insert code for All Posts & Create Post button here -->
-                            <input class="yes-btn" type="button" value="Yes"    >
+                            <input class="yes-btn" type="button" value="Yes">
                             <input class="no-btn" type="button" value="No"
                                 onclick="closeModal(deleteModal)">
 

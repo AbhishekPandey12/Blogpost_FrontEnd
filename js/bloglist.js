@@ -1,20 +1,28 @@
-function signUp(signUpElem){
+function signUp(signUpElem) {
     signUpElem.style.display = "block";
 }
 
-function signIn(signInElem){
+function signIn(signInElem) {
     signInElem.style.display = "block";
 }
 
-function openSignUpModal(ele){
+function openSignUpModal(ele) {
     closeModal(ele);
     document.getElementById('signUpModal').style.display = "block";
 }
 
-function closeModal(elem){
+function closeModal(elem) {
     elem.style.display = "none";
 }
 
-function openCreatePostModal(createPostElem){
+function openCreatePostModal(createPostElem) {
     createPostElem.style.display = "block";
+}
+
+function deletePost(deletePostEle) {
+    deletePostEle.style.display = "block";
+}
+
+function changeLocation() {
+    window.location = '../html/post.html';
 }
